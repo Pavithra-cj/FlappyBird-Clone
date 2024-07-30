@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AboutActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background1"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/blur_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/_150sdp">
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="About"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonta"/>
+
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="This Flappy Bird clone game is developed for Android devices. It aims to provide a fun and challenging experience similar to the original game. \n\nDeveloper: Pavithra Chamod\nVersion: 1.0\n\nThank you for playing! We hope you enjoy the game."
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/_40sdp"
+            android:backgroundTint="@color/design_default_color_error"/>
+
+    </LinearLayout>
+
+</FrameLayout>

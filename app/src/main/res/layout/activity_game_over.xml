@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.GameOverActivity"
+    android:background="@drawable/background1">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="90dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/bestDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/fonta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BEST"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/fonta"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/scoreDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="40sp"
+                    android:fontFamily="@font/fonta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCORE"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/fonta"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/relative1">
+
+        <TextView
+            android:id="@+id/gameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAME OVER"
+            android:textSize="50sp"
+            android:fontFamily="@font/fonta"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorYellow"/>
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="RESTART"
+            android:fontFamily="@font/fonta"
+            android:layout_below="@id/gameOver"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_50sdp"
+            android:backgroundTint="@color/colorRed"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
