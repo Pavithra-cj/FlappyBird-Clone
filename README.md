@@ -41,4 +41,8 @@ This game was developed using Android Studio and Java. It involves handling touc
 - Build and run the project on an emulator or a physical device
 
 # Contact
+If you have any questions or feedback, please feel free to contact me:
+
+GitHub: [Pavithra-cj](https://github.com/Pavithra-cj)
+Email: pavithrachamodj@gmail.com
 
