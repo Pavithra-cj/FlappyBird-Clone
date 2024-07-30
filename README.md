@@ -19,6 +19,7 @@ $ git clone https://github.com/yourusername/FlappyBirdClone.git
 
 # Go into the repository
 $ cd FlappyBirdClone
+```
 
 # Open the project in Android Studio and run it on an emulator or physical device
 
@@ -33,3 +34,11 @@ This game was developed using Android Studio and Java. It involves handling touc
 ##Prerequisites
 - Android Studio
 - Java Development Kit (JDK)
+
+##Building and Running
+- Clone the repository
+- Open the project in Android Studio
+- Build and run the project on an emulator or a physical device
+
+##Contact
+
