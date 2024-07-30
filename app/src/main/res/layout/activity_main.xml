@@ -5,15 +5,77 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background1"
+    tools:context=".Activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/bird1"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/title"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/playBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/play"
+            android:layout_marginTop="@dimen/_40sdp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/HowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fonta"
+            android:text="How to play"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            app:cornerRadius="25dp"
+            android:layout_marginTop="@dimen/_16sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aboutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="@font/fonta"
+            android:text="About"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            app:cornerRadius="25dp"
+            android:layout_marginTop="@dimen/_16sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorRed"
+            android:fontFamily="@font/fonta"
+            android:text="EXIT"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            app:cornerRadius="25dp"
+            android:layout_marginTop="@dimen/_16sdp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
