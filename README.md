@@ -15,10 +15,10 @@ To clone and run this application, you'll need Git and Android Studio installed 
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/yourusername/FlappyBirdClone.git
+$ git clone https://github.com/Pavithra-cj/FlappyBird-Clone.git
 
 # Go into the repository
-$ cd FlappyBirdClone
+$ cd FlappyBird-Clone
 ```
 
 Open the project in Android Studio and run it on an emulator or physical device
